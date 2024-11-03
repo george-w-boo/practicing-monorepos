@@ -15,7 +15,7 @@
     "test": "jest",
     "test:clear-cache": "jest --clearCache",
     "test:coverage": "jest --coverage",
-    "coverage": "npm-run-all test:*",
+    "coverage": "npm-run-all test:clear-cache test:coverage",
     "lint": "eslint 'src/**/*.ts' --fix",
     "docs:build": "typedoc",
     "docs:serve": "serve docs",
