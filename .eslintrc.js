@@ -7,6 +7,10 @@ module.exports = {
   parserOptions: {
     sourceType: "module",
   },
-  extends: ["plugin:@typescript-eslint/recommended"],
+  extends: [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+  ],
   rules: {},
 };
