@@ -21,7 +21,8 @@
     "docs:serve": "serve docs",
     "build-docs": "typedoc",
     "serve-docs": "npm-run-all docs:*",
-    "pre-commit": "npm-run-all check-types lint"
+    "pre-commit": "npm-run-all check-types lint",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
