@@ -10,7 +10,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/george-w-boo/practicing-monorepos.git"
+    "url": "https://github.com/george-w-boo/practicing-monorepos.git"
   },
   "bugs": {
     "url": "https://github.com/george-w-boo/practicing-monorepos/issues"

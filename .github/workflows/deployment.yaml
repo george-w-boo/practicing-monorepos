@@ -20,6 +20,6 @@ jobs:
       - name: Building...
         run: yarn build
       - name: Deploying to NPM registry...
-        run: npm publish --access public
+        run: yarn npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
