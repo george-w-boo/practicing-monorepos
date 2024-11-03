@@ -7,6 +7,15 @@
   "types": "build/index.d.ts",
   "author": "m.ostapysko",
   "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-w-boo/practicing-monorepos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/george-w-boo/practicing-monorepos/issues"
+  },
+  "homepage": "https://github.com/george-w-boo/practicing-monorepos#readme",
   "scripts": {
     "check-types": "tsc --noEmit",
     "clean": "rimraf build",
