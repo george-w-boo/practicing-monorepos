@@ -1,0 +1,25 @@
+name: Deployment to NPM registry
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deployment:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setting up Node.js...
+        uses: actions/setup-node@v2
+        with:
+          node-version: 22
+          registry-url: 'https//registry.npmjs.org'
+      - name: Installing dependencies...
+        run: yarn --frozen-lockfile
+      - name: Running tests...
+        run: yarn test
+      - name: Building...
+        run: yarn build
+      - name: Deploying to NPM registry...
+        run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
