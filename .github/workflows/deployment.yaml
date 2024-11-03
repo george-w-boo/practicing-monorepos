@@ -23,7 +23,7 @@ jobs:
       - name: Building...
         run: yarn build
       - name: Deploying to NPM registry...
-        run: yarn npm publish --access public
+        run: npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_CHANGESET_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_CHANGESET_TOKEN }}
