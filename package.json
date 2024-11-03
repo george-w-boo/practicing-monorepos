@@ -1,0 +1,12 @@
+{
+  "name": "@m.ostapysko/base-converter",
+  "packageManager": "yarn@4.5.1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "m.ostapysko",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
