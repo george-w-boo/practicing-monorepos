@@ -45,6 +45,12 @@ export class BaseConverter {
     return result;
   }
 
+  /**
+   * converts a number of a base N to a decimal
+   * @param numberToConvert number in base N we want to convert
+   * @param baseFrom the base of the number
+   * @returns the converted number to decimal
+   */
   convertFromBaseNToDecimal(numberToConvert: string, baseFrom: number): number {
     this.validateNumberInBaseN(numberToConvert, baseFrom);
 

@@ -12,7 +12,9 @@
     "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --clearCache && jest --coverage",
-    "lint": "eslint 'src/**/*.ts'"
+    "lint": "eslint 'src/**/*.ts'",
+    "build-docs": "typedoc",
+    "serve-docs": "yarn build-docs && serve docs"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
