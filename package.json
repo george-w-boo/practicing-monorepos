@@ -1,7 +1,7 @@
 {
   "name": "@m.ostapysko/base-converter",
   "packageManager": "yarn@4.5.1",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to convert numbers from one bae to another",
   "main": "build/index.js",
   "types": "build/index.d.ts",
